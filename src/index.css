@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: "Font1";
+    src: url(../public/Lausanne-300.woff2);
+}
+
+@font-face {
+    font-family: "Font2";
+    src: url(../public/Lausanne-500.woff2);
+}
+
+html,body::selection{
+    background-color: #D3FD50;
+    color: black;
+}
