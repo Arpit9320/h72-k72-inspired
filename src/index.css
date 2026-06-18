@@ -14,3 +14,58 @@
     background: #D3FD50;
     color: black;
 }
+
+.movex{
+    animation: moveanimation 5s linear infinite;
+}
+
+@keyframes moveanimation {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* .movelink{
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.2s ease;
+    pointer-events: none;
+}
+
+.link:hover .movelink{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.crossDiv:hover .crossChild{
+    background-color: #D3FD50;
+} */
+
+
+
+
+
+@media (min-width: 1024px) {
+    .movelink {
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: all 0.2s ease;
+        pointer-events: none;
+    }
+
+    .link:hover .movelink {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    .crossDiv:hover .crossChild {
+        background-color: #D3FD50;
+    }
+}
+

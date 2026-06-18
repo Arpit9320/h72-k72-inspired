@@ -1,12 +1,15 @@
-import { useRef } from "react";
+import { useContext, useRef } from "react";
 import HeroBtn from "../components/home/HeroBtn";
 import HeroText from "../components/home/HeroText";
 import HeroVideo from "../components/home/HeroVideo";
 import SecondText from "../components/home/SecondText";
 import { Link } from "react-router-dom";
 import Timer from "../components/Timer";
+import { OptionsContext } from "../context/MenuContext";
 
 const Home = () => {
+
+  const [Opened, SetOpened]=useContext(OptionsContext)
 
   const navHoverREf = useRef(null)
 
@@ -23,7 +26,8 @@ const Home = () => {
         <HeroVideo />
       </div>
 
-      <div className="fixed lg:h-[3.5vw] lg:w-[16vw] h-[11vw] w-[50%] right-0 top-0 z-50" onMouseEnter={()=>{
+
+      <div className="fixed lg:h-[3.5vw] lg:w-[16vw] h-[11vw] w-[50%] right-0 top-0 z-50 cursor-pointer" onMouseEnter={()=>{
         navHoverREf.current.style.height = '100%'
         shortline.current.style.backgroundColor = 'black'
         longline.current.style.backgroundColor = 'black'
@@ -31,7 +35,7 @@ const Home = () => {
         navHoverREf.current.style.height = '0%'
         shortline.current.style.backgroundColor = 'white'
         longline.current.style.backgroundColor = 'white'
-      }}>
+      }} onClick={()=>{SetOpened(true)}}>
 
         <div className="flex flex-col gap-1 items-end justify-center h-full w-full pr-6 bg-black">
           <div ref={longline} className="h-[1.6px] w-[25%] rounded-2xl bg-white z-100"></div>
