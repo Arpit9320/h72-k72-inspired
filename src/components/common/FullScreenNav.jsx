@@ -140,88 +140,103 @@ const FullScreenNav = () => {
                 <div className='lg:h-38 w-0.5 h-33 bg-white absolute rotate-45 origin-top right-0 crossChild'></div>
             </div>
 
-            <div className="all-links  w-full lg:mt-[8.5vw] mt-[70vw] cursor-pointer">
+            <div className="all-links  w-full lg:mt-[8.5vw] mt-[70vw] cursor-pointer"> 
 
-                <div className="link origin-top lg:h-[8vw] h-[15vw]  w-full py-2 border-t text-center border-white font-[font2] uppercase relative">
-                    <h2 className='lg:text-[8vw] lg:leading-[8vw] text-[15vw] leading-[13vw]'>Projets</h2>
-                    <div className=' movelink absolute  top-0 h-full lg:flex hidden'>
-                        
-                        <div className=' bg-[#D3FD50] h-full shrink-0 flex items-center movex'>
-                            <h2 className='text-[7.5vw] translate-y-2 text-black whitespace-nowrap pl-6'>Pour tout voir</h2>
-                            <img className='h-[6vw] w-[15vw] rounded-full object-cover ml-6' src="https://k72.ca/images/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290.jpg?w=640&h=290&s=ac50a70feaaa2601b3aacad544c6045b" alt="" />
-                            <h2 className='text-[7.5vw] translate-y-2 text-black whitespace-nowrap pl-6'>Pour tout voir</h2>
-                            <img className='h-[6vw] w-[15vw] rounded-full object-cover ml-6 ' src="https://k72.ca/images/caseStudies/iA_BRAND/Thumbnail.png?w=640&h=290&s=755b635c06d126151d64017fa1042a7c" alt="" />
-                        </div >
-                        <div className=' bg-[#D3FD50] h-full shrink-0 flex items-center movex'>
-                            <h2 className='text-[7.5vw] translate-y-2 text-black whitespace-nowrap pl-6'>Pour tout voir</h2>
-                            <img className='h-[6vw] w-[15vw] rounded-full object-cover ml-6' src="https://k72.ca/images/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290.jpg?w=640&h=290&s=ac50a70feaaa2601b3aacad544c6045b" alt="" />
-                            <h2 className='text-[7.5vw] translate-y-2 text-black whitespace-nowrap pl-6'>Pour tout voir</h2>
-                            <img className='h-[6vw] w-[15vw] rounded-full object-cover ml-6' src="https://k72.ca/images/caseStudies/iA_BRAND/Thumbnail.png?w=640&h=290&s=755b635c06d126151d64017fa1042a7c" alt="" />
-                        </div >
-                        
-                        
+                <Link to='/projets' onClick={()=>{SetOpened(false)}}>
+                    <div className="link origin-top lg:h-[8vw] h-[15vw]  w-full py-2 border-t text-center border-white font-[font2] uppercase relative">
+                        <h2 className='lg:text-[8vw] lg:leading-[8vw] text-[15vw] leading-[13vw]'>Projets</h2>
+                        <div className=' movelink absolute  top-0 h-full lg:flex hidden'>
+                            
+                            <div className=' bg-[#D3FD50] h-full shrink-0 flex items-center movex'>
+                                <h2 className='text-[7.5vw] translate-y-2 text-black whitespace-nowrap pl-6'>Pour tout voir</h2>
+                                <img className='h-[6vw] w-[15vw] rounded-full object-cover ml-6' src="https://k72.ca/images/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290.jpg?w=640&h=290&s=ac50a70feaaa2601b3aacad544c6045b" alt="" />
+                                <h2 className='text-[7.5vw] translate-y-2 text-black whitespace-nowrap pl-6'>Pour tout voir</h2>
+                                <img className='h-[6vw] w-[15vw] rounded-full object-cover ml-6 ' src="https://k72.ca/images/caseStudies/iA_BRAND/Thumbnail.png?w=640&h=290&s=755b635c06d126151d64017fa1042a7c" alt="" />
+                            </div >
+                            <div className=' bg-[#D3FD50] h-full shrink-0 flex items-center movex'>
+                                <h2 className='text-[7.5vw] translate-y-2 text-black whitespace-nowrap pl-6'>Pour tout voir</h2>
+                                <img className='h-[6vw] w-[15vw] rounded-full object-cover ml-6' src="https://k72.ca/images/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290.jpg?w=640&h=290&s=ac50a70feaaa2601b3aacad544c6045b" alt="" />
+                                <h2 className='text-[7.5vw] translate-y-2 text-black whitespace-nowrap pl-6'>Pour tout voir</h2>
+                                <img className='h-[6vw] w-[15vw] rounded-full object-cover ml-6' src="https://k72.ca/images/caseStudies/iA_BRAND/Thumbnail.png?w=640&h=290&s=755b635c06d126151d64017fa1042a7c" alt="" />
+                            </div >
+                            
+                            
+                        </div>
                     </div>
-                </div>
-                <div className="link origin-top lg:h-[8vw] h-[15vw]  w-full py-2 border-t text-center border-white font-[font2] uppercase relative">
-                    <h2 className='lg:text-[8vw] lg:leading-[8vw] text-[15vw] leading-[13vw] '>agence</h2>
-                    <div className='movelink absolute  top-0 h-full lg:flex hidden'>
-                        
-                        <div className=' bg-[#D3FD50] h-full shrink-0 flex items-center movex'>
-                            <h2 className='text-[7.5vw] translate-y-2 text-black whitespace-nowrap pl-6'>Pour tout voir</h2>
-                            <img className='h-[6vw] w-[15vw] rounded-full object-cover ml-6' src="https://k72.ca/images/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290.jpg?w=640&h=290&s=ac50a70feaaa2601b3aacad544c6045b" alt="" />
-                            <h2 className='text-[7.5vw] translate-y-2 text-black whitespace-nowrap pl-6'>Pour tout voir</h2>
-                            <img className='h-[6vw] w-[15vw] rounded-full object-cover ml-6 ' src="https://k72.ca/images/caseStudies/iA_BRAND/Thumbnail.png?w=640&h=290&s=755b635c06d126151d64017fa1042a7c" alt="" />
-                        </div >
-                        <div className=' bg-[#D3FD50] h-full shrink-0 flex items-center movex'>
-                            <h2 className='text-[7.5vw] translate-y-2 text-black whitespace-nowrap pl-6'>Pour tout voir</h2>
-                            <img className='h-[6vw] w-[15vw] rounded-full object-cover ml-6' src="https://k72.ca/images/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290.jpg?w=640&h=290&s=ac50a70feaaa2601b3aacad544c6045b" alt="" />
-                            <h2 className='text-[7.5vw] translate-y-2 text-black whitespace-nowrap pl-6'>Pour tout voir</h2>
-                            <img className='h-[6vw] w-[15vw] rounded-full object-cover ml-6' src="https://k72.ca/images/caseStudies/iA_BRAND/Thumbnail.png?w=640&h=290&s=755b635c06d126151d64017fa1042a7c" alt="" />
-                        </div >
-                        
-                        
+                </Link>
+
+                <Link to='/agence' onClick={()=>{SetOpened(false)}}>
+                    <div className="link origin-top lg:h-[8vw] h-[15vw]  w-full py-2 border-t text-center border-white font-[font2] uppercase relative">
+                        <h2 className='lg:text-[8vw] lg:leading-[8vw] text-[15vw] leading-[13vw] '>agence</h2>
+                        <div className='movelink absolute  top-0 h-full lg:flex hidden'>
+                            
+                            <div className=' bg-[#D3FD50] h-full shrink-0 flex items-center movex'>
+                                <h2 className='text-[7.5vw] translate-y-2 text-black whitespace-nowrap pl-6'>Pour tout voir</h2>
+                                <img className='h-[6vw] w-[15vw] rounded-full object-cover ml-6' src="https://k72.ca/images/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290.jpg?w=640&h=290&s=ac50a70feaaa2601b3aacad544c6045b" alt="" />
+                                <h2 className='text-[7.5vw] translate-y-2 text-black whitespace-nowrap pl-6'>Pour tout voir</h2>
+                                <img className='h-[6vw] w-[15vw] rounded-full object-cover ml-6 ' src="https://k72.ca/images/caseStudies/iA_BRAND/Thumbnail.png?w=640&h=290&s=755b635c06d126151d64017fa1042a7c" alt="" />
+                            </div >
+                            <div className=' bg-[#D3FD50] h-full shrink-0 flex items-center movex'>
+                                <h2 className='text-[7.5vw] translate-y-2 text-black whitespace-nowrap pl-6'>Pour tout voir</h2>
+                                <img className='h-[6vw] w-[15vw] rounded-full object-cover ml-6' src="https://k72.ca/images/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290.jpg?w=640&h=290&s=ac50a70feaaa2601b3aacad544c6045b" alt="" />
+                                <h2 className='text-[7.5vw] translate-y-2 text-black whitespace-nowrap pl-6'>Pour tout voir</h2>
+                                <img className='h-[6vw] w-[15vw] rounded-full object-cover ml-6' src="https://k72.ca/images/caseStudies/iA_BRAND/Thumbnail.png?w=640&h=290&s=755b635c06d126151d64017fa1042a7c" alt="" />
+                            </div >
+                            
+                            
+                        </div>
                     </div>
-                </div>
-                <div className="link origin-top lg:h-[8vw] h-[15vw]  w-full py-2 border-t text-center border-white font-[font2] uppercase relative">
-                    <h2 className='lg:text-[8vw] lg:leading-[8vw] text-[15vw] leading-[13vw] '>Contact</h2>
-                    <div className='movelink absolute  top-0 h-full lg:flex hidden'>
-                        
-                        <div className=' bg-[#D3FD50] h-full shrink-0 flex items-center movex'>
-                            <h2 className='text-[7.5vw] translate-y-2 text-black whitespace-nowrap pl-6'>Pour tout voir</h2>
-                            <img className='h-[6vw] w-[15vw] rounded-full object-cover ml-6' src="https://k72.ca/images/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290.jpg?w=640&h=290&s=ac50a70feaaa2601b3aacad544c6045b" alt="" />
-                            <h2 className='text-[7.5vw] translate-y-2 text-black whitespace-nowrap pl-6'>Pour tout voir</h2>
-                            <img className='h-[6vw] w-[15vw] rounded-full object-cover ml-6 ' src="https://k72.ca/images/caseStudies/iA_BRAND/Thumbnail.png?w=640&h=290&s=755b635c06d126151d64017fa1042a7c" alt="" />
-                        </div >
-                        <div className=' bg-[#D3FD50] h-full shrink-0 flex items-center movex'>
-                            <h2 className='text-[7.5vw] translate-y-2 text-black whitespace-nowrap pl-6'>Pour tout voir</h2>
-                            <img className='h-[6vw] w-[15vw] rounded-full object-cover ml-6' src="https://k72.ca/images/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290.jpg?w=640&h=290&s=ac50a70feaaa2601b3aacad544c6045b" alt="" />
-                            <h2 className='text-[7.5vw] translate-y-2 text-black whitespace-nowrap pl-6'>Pour tout voir</h2>
-                            <img className='h-[6vw] w-[15vw] rounded-full object-cover ml-6' src="https://k72.ca/images/caseStudies/iA_BRAND/Thumbnail.png?w=640&h=290&s=755b635c06d126151d64017fa1042a7c" alt="" />
-                        </div >
-                        
-                        
+                </Link>
+                
+                <Link to='/' onClick={()=>{SetOpened(false)}}>
+                    
+                    <div className="link origin-top lg:h-[8vw] h-[15vw]  w-full py-2 border-t text-center border-white font-[font2] uppercase relative">
+                        <h2 className='lg:text-[8vw] lg:leading-[8vw] text-[15vw] leading-[13vw] '>Contact</h2>
+                        <div className='movelink absolute  top-0 h-full lg:flex hidden'>
+                            
+                            <div className=' bg-[#D3FD50] h-full shrink-0 flex items-center movex'>
+                                <h2 className='text-[7.5vw] translate-y-2 text-black whitespace-nowrap pl-6'>Pour tout voir</h2>
+                                <img className='h-[6vw] w-[15vw] rounded-full object-cover ml-6' src="https://k72.ca/images/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290.jpg?w=640&h=290&s=ac50a70feaaa2601b3aacad544c6045b" alt="" />
+                                <h2 className='text-[7.5vw] translate-y-2 text-black whitespace-nowrap pl-6'>Pour tout voir</h2>
+                                <img className='h-[6vw] w-[15vw] rounded-full object-cover ml-6 ' src="https://k72.ca/images/caseStudies/iA_BRAND/Thumbnail.png?w=640&h=290&s=755b635c06d126151d64017fa1042a7c" alt="" />
+                            </div >
+                            <div className=' bg-[#D3FD50] h-full shrink-0 flex items-center movex'>
+                                <h2 className='text-[7.5vw] translate-y-2 text-black whitespace-nowrap pl-6'>Pour tout voir</h2>
+                                <img className='h-[6vw] w-[15vw] rounded-full object-cover ml-6' src="https://k72.ca/images/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290.jpg?w=640&h=290&s=ac50a70feaaa2601b3aacad544c6045b" alt="" />
+                                <h2 className='text-[7.5vw] translate-y-2 text-black whitespace-nowrap pl-6'>Pour tout voir</h2>
+                                <img className='h-[6vw] w-[15vw] rounded-full object-cover ml-6' src="https://k72.ca/images/caseStudies/iA_BRAND/Thumbnail.png?w=640&h=290&s=755b635c06d126151d64017fa1042a7c" alt="" />
+                            </div >
+                            
+                            
+                        </div>
                     </div>
-                </div>
-                <div className="link origin-top lg:h-[8vw] h-[15vw]  w-full py-2 border-y text-center border-white font-[font2] uppercase relative">
-                    <h2 className='lg:text-[8vw] lg:leading-[8vw] text-[15vw] leading-[13vw]'>Blouge</h2>
-                    <div className='movelink absolute  top-0 h-full lg:flex hidden'>
-                        
-                        <div className=' bg-[#D3FD50] h-full shrink-0 flex items-center movex'>
-                            <h2 className='text-[7.5vw] translate-y-2 text-black whitespace-nowrap pl-6'>Pour tout voir</h2>
-                            <img className='h-[6vw] w-[15vw] rounded-full object-cover ml-6' src="https://k72.ca/images/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290.jpg?w=640&h=290&s=ac50a70feaaa2601b3aacad544c6045b" alt="" />
-                            <h2 className='text-[7.5vw] translate-y-2 text-black whitespace-nowrap pl-6'>Pour tout voir</h2>
-                            <img className='h-[6vw] w-[15vw] rounded-full object-cover ml-6 ' src="https://k72.ca/images/caseStudies/iA_BRAND/Thumbnail.png?w=640&h=290&s=755b635c06d126151d64017fa1042a7c" alt="" />
-                        </div >
-                        <div className=' bg-[#D3FD50] h-full shrink-0 flex items-center movex'>
-                            <h2 className='text-[7.5vw] translate-y-2 text-black whitespace-nowrap pl-6'>Pour tout voir</h2>
-                            <img className='h-[6vw] w-[15vw] rounded-full object-cover ml-6' src="https://k72.ca/images/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290.jpg?w=640&h=290&s=ac50a70feaaa2601b3aacad544c6045b" alt="" />
-                            <h2 className='text-[7.5vw] translate-y-2 text-black whitespace-nowrap pl-6'>Pour tout voir</h2>
-                            <img className='h-[6vw] w-[15vw] rounded-full object-cover ml-6' src="https://k72.ca/images/caseStudies/iA_BRAND/Thumbnail.png?w=640&h=290&s=755b635c06d126151d64017fa1042a7c" alt="" />
-                        </div >
-                        
-                        
+
+                </Link>
+
+                <Link to='/' onClick={()=>{SetOpened(false)}}>
+
+                    <div className="link origin-top lg:h-[8vw] h-[15vw]  w-full py-2 border-y text-center border-white font-[font2] uppercase relative">
+                        <h2 className='lg:text-[8vw] lg:leading-[8vw] text-[15vw] leading-[13vw]'>Blouge</h2>
+                        <div className='movelink absolute  top-0 h-full lg:flex hidden'>
+                            
+                            <div className=' bg-[#D3FD50] h-full shrink-0 flex items-center movex'>
+                                <h2 className='text-[7.5vw] translate-y-2 text-black whitespace-nowrap pl-6'>Pour tout voir</h2>
+                                <img className='h-[6vw] w-[15vw] rounded-full object-cover ml-6' src="https://k72.ca/images/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290.jpg?w=640&h=290&s=ac50a70feaaa2601b3aacad544c6045b" alt="" />
+                                <h2 className='text-[7.5vw] translate-y-2 text-black whitespace-nowrap pl-6'>Pour tout voir</h2>
+                                <img className='h-[6vw] w-[15vw] rounded-full object-cover ml-6 ' src="https://k72.ca/images/caseStudies/iA_BRAND/Thumbnail.png?w=640&h=290&s=755b635c06d126151d64017fa1042a7c" alt="" />
+                            </div >
+                            <div className=' bg-[#D3FD50] h-full shrink-0 flex items-center movex'>
+                                <h2 className='text-[7.5vw] translate-y-2 text-black whitespace-nowrap pl-6'>Pour tout voir</h2>
+                                <img className='h-[6vw] w-[15vw] rounded-full object-cover ml-6' src="https://k72.ca/images/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290.jpg?w=640&h=290&s=ac50a70feaaa2601b3aacad544c6045b" alt="" />
+                                <h2 className='text-[7.5vw] translate-y-2 text-black whitespace-nowrap pl-6'>Pour tout voir</h2>
+                                <img className='h-[6vw] w-[15vw] rounded-full object-cover ml-6' src="https://k72.ca/images/caseStudies/iA_BRAND/Thumbnail.png?w=640&h=290&s=755b635c06d126151d64017fa1042a7c" alt="" />
+                            </div >
+                            
+                            
+                        </div>
                     </div>
-                </div>
+
+                </Link>
                 
             </div>
 
