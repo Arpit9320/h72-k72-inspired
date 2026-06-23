@@ -1,6 +1,10 @@
 import Navbar from "../components/common/Navbar"
 import Logo from "../components/common/Logo"
 import ProjectCard from "../components/projects/ProjectCard"
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import Footer from "../components/common/Footer";
 
 
 const Projects = () => {
@@ -39,6 +43,43 @@ const Projects = () => {
     }
   ]
 
+  gsap.registerPlugin(ScrollTrigger)
+  useGSAP(function () {
+
+    const mm = gsap.matchMedia();
+    
+    mm.add("(min-width: 1024px)", ()=>{
+        gsap.from('.eachRow',{
+        height: '125px',
+        stagger:{
+          amount: 0.1
+        },
+        scrollTrigger:{
+          trigger: '.itemsSection',
+          start: 'top 100%',
+          end: 'top -1100%',
+          scrub:true
+        }
+      })
+    })
+
+    mm.add("(max-width: 1023px)", ()=>{
+        gsap.from('.eachRow',{
+        height: '500px',
+        stagger:{
+          amount: 0.1
+        },
+        scrollTrigger:{
+          trigger: '.itemsSection',
+          start: 'top 100%',
+          end: 'top -900%',
+          scrub:true
+        }
+      })
+    })
+
+    
+  })
 
   return (
     <div> 
@@ -47,18 +88,23 @@ const Projects = () => {
 
       <Navbar/>
 
-      <div className="headingSection mt-[51vh] pt-6 pl-4 ">
-        <h2 className="font-[font2] text-[12.5vw] uppercase leading-[8vw]">Projets</h2>
+      <div className="headingSection lg:mt-[51vh] mt-[49vh] pt-6 lg:pl-4 pl-2">
+        <h2 className="font-[font2] lg:text-[12.5vw] uppercase lg:leading-[8vw] text-[19vw] leading-[12vw]">Projets</h2>
       </div>
 
       <div className="itemsSection flex flex-col gap-4 mt-1">
 
-        {img.map((obj)=>{
-           return <ProjectCard img1={obj.img1} img2={obj.img2}/> 
+        {img.map((obj, idx)=>{
+           return <div key={idx} className="eachRow w-full lg:h-130 h-225 flex lg:flex-row flex-col gap-4 lg:pl-2 lg:pr-2 ">
+            <ProjectCard img1={obj.img1} img2={obj.img2}/>
+           </div>  
         })}
       
       
       </div>
+
+
+        <Footer/>
 
     </div>
   )

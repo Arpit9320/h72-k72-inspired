@@ -29,7 +29,7 @@ const Home = () => {
         <HeroBtn />
       </div>
 
-      <Timer/>  
+      <Timer/> 
 
     </div>
   );

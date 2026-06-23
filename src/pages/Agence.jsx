@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import Navbar from "../components/common/Navbar";
 import Logo from "../components/common/Logo";
+import Footer from "../components/common/Footer";
 
 const Agence = () => {
 
@@ -109,6 +110,10 @@ const Agence = () => {
       </div>
 
       <div className="section2 h-screen"></div>
+
+
+      <Footer/>
+
     </div>
   )
 }
