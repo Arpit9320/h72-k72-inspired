@@ -9,6 +9,8 @@ const HeroVideo = () => {
           autoPlay
           loop
           muted
+          playsInline
+          preload="auto"
         ></video>
       </div>
   )
