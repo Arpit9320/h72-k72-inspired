@@ -12,10 +12,10 @@ const Home = () => {
   return (
 
 
-    <div className="h-screen w-screen">
+    <div className=" w-screen">
 
 
-      <div className="fixed h-screen w-screen">
+      <div className="fixed h-full w-screen">
         <HeroVideo />
       </div>
       
@@ -23,7 +23,7 @@ const Home = () => {
 
       <Logo logoColor={'white'}/>
 
-      <div className="h-screen w-screen relative flex flex-col items-center lg:justify-between justify-end gap-7 lg:gap-0 lg:pb-0 pb-2.5">
+      <div className="h-dvh w-screen relative flex flex-col items-center lg:justify-between justify-end gap-7 lg:gap-0 lg:pb-0 pb-2.5">
         <HeroText />
         <SecondText />
         <HeroBtn />
